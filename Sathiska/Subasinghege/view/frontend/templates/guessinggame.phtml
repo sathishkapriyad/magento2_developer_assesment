@@ -1,0 +1,31 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$request = $objectManager->get('\Magento\Framework\App\Request\Http');
+
+if ($request->getFullActionName() != 'catalog_product_view') {
+    ?>
+    <footer class="footer-two">
+        <section class="v-center">
+            <div>
+                <a class="js-open-modal btn" href="#" data-modal-id="popup1"><?=/* @noEscape */ 'Guessing Game' ?></a>
+            </div>
+        </section>
+
+        <div id="popup1" class="modal-box">
+            <header> <a href="#" class="js-modal-close close">×</a>
+                <h3 class="gametitle"><?=/* @noEscape */ 'Guessing Game' ?></h3>
+            </header>
+            <div class="modal-body">
+                <p class="infonum"><?=/* @noEscape */ 'Please Enter The Number from 1 to 50.'?></p>
+                <form id="game-form">
+                    <input type="number" id="gameinput" name="games" class="gameinput required" data-validate="{required:true}">
+                    <div id="gamenumber" class="gamenumber"></div>
+                    <div class="congratessul"></div>
+                    <div class="congrateserr"></div>
+                    <input type="submit" id="generatenum" class="generatenum" value="Guess">
+                </form>
+            </div>
+            <footer><a href="#" class="btn btn-small js-modal-close"><?=/* @noEscape */ 'Close'?></a> </footer>
+        </div>
+    </footer>
+<?php } ?>
