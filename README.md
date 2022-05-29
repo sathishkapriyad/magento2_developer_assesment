@@ -13,4 +13,5 @@ $ php bin/magento cache:flush
 
 Screenshots
 =============
-![Magento 2 Guessing Game](https://user-images.githubusercontent.com/24508629/170829489-9da12f71-06a1-4a59-85cb-e80a7ef2ff6a.PNG)
+![Guessing Game Footer](https://user-images.githubusercontent.com/24508629/170864081-dcd0140e-6707-4962-89bd-5773c28baa2c.PNG)
+![Magento 2 Guessing Game](https://user-images.githubusercontent.com/24508629/170864085-d47270be-5e24-4add-ba1b-96b8346e841a.PNG)
