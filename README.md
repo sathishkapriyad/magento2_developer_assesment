@@ -3,10 +3,11 @@
 Installation instructions
 =============
 
-1. Install this component using Composer:
+1. Clone the repository to app/code directory
 2. Upgrade, compile & clear cache:
 ```bash
 $ php bin/magento setup:upgrade
+$ php bin/magento setup:static-content:deploy -f
 $ php bin/magento setup:di:compile
 $ php bin/magento cache:flush
 ```
